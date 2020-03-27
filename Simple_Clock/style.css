@@ -1,0 +1,22 @@
+h1{
+    margin:0;
+    padding:0;
+    font-family:mono-spaced;
+}
+footer{
+    margin:0;
+    padding:0;
+    font-family:mono-spaced;
+    font-size:11px;
+}
+body {
+	background-image: radial-gradient( rgb(211, 211, 211), rgb(119,136,153) );
+	background-attachment: fixed;
+}
+.clock{
+    text-align:center;
+    width:auto;
+    height:auto;
+    font-size:100px;
+
+}
