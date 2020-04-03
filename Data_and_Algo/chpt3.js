@@ -14,3 +14,40 @@ Math.round(1.1); //1
 Math.round(.5);  //1
 Math.ceil(0.1);  //1
 
+// Exponents
+var x = 1;
+var y = 10;
+Math.pow(x,y);
+
+// Number.EPSILON
+function numberEquals(x, y){
+	return Math.abs(x -y) < Number.EPSILON;
+}
+numberEquals(0.1 + 0.2, 0.3); //true
+
+// Maximum number values
+Number.MAX_SAFE_INTEGER + 1 === Number.MAX_SAFE_INTEGER + 2; // TRUE
+Number.MAX_SAFE_INTEGER + 1.11 === Number.MAX_SAFE_INTEGER + 2.022; // FALSE
+Number.MAX_VALUE // returns largest floating point number possible
+Number.MAX_VALUE // is equal to 1.7976931348623157e+308
+Number.MAX_VALUE + 1 === Number.MAX_VALUE + 2; // true
+Number.MAX_VALUE + 1.111 === Number.MAX_VALUE + 2.022; //true
+
+// Minimum number values
+Number.MIN_SAFE_INTEGER //returns the smalllest integer
+Number.MIN_SAFE_INTEGER //=== -9007199254740991;
+Number.MIN_SAFE_INTEGER - 1.111 === Number.MIN_SAFE_INTEGER - 2.022;//false
+Number.MIN_VALUE // returns smallest floating point number possible
+Number.MIN_VALUE // is equal to 5e-324
+Number.MIN_VALUE - 1 == -1; // true because its handling min_value as integer 0 - 1 == -1
+
+//Infinity
+Infinity > Number.MAX_VALUE; // true
+Infinity > Number.MAX_SAFE_VALUE; // true
+-Infinity < Number.MIN_VALUE; // true
+-Infinity < Number.MIN_SAFE_VALUE; // true
+
+-Infinity < Number.MIN_SAFE_INTEGER < Number.MIN_VALUE < 0 < Number.MAX_SAFE_INTEGER < Number.MAX_VALUE < Infinity
+
+
+
